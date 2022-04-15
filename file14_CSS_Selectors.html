@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1{
+            color: cadetblue;
+        }
+        /* Id Selector */
+        /* This is styling will apply to only the element with given id */
+        #purpleElement{
+            color: blueviolet;
+        }
+        /* Class Selector */
+        /* This is styling will apply to only the elements belonging to specific class*/
+        .bgBlue{
+            color: aqua;
+            background-color: blue;
+        }
+        /* Element Selector */
+        p{
+            color: brown;
+        }
+        /* Group Selector */
+        /* Grouping various element types together for styling */
+        footer, span {
+            background-color: aquamarine;
+        }
+        </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p>This is a pargraph to demonstrate CSS Selector</p>
+    <p id="purpleElement" class="bgBlue">This is another paragraph to demonstrate CSS Selector</p>
+    <div>
+        <p  class="bgBlue">This is yet another paragraph to demonstrate CSS Selector</p>
+        <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

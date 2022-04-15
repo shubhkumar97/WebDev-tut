@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #b2d7f8;
+            border: 3px solid rgb(160, 21, 168);
+            /* We can set padding/margin for top right bottom left like this */
+            /*
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 30px; 
+            */
+
+            /* Padding/margin: top right bottom left */
+            /* 
+            padding: 30px 40px 50px 80px;  
+            */
+
+            /* Padding/margin: y(top & bottom) x(left & right) */
+            padding: 20px 30px;
+            margin: 20px;
+            border-radius: 30px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sit fugiat repellendus error earum excepturi voluptas possimus distinctio atque id hic, dolore minus.</p>
+    </div>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sit fugiat repellendus error earum excepturi voluptas possimus distinctio atque id hic, dolore minus.</p>
+    </div>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sit fugiat repellendus error earum excepturi voluptas possimus distinctio atque id hic, dolore minus.</p>
+    </div>
+</body>
+</html>

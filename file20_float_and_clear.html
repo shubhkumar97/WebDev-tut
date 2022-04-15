@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Rubik', sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid blue;
+            background-color: rgb(232, 141, 141);
+            margin:auto;
+        }
+        .item{
+            border: 3px solid green;
+            margin: 12px 10px;
+            padding: 12px 19px;
+            background-color: beige;
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 47%;
+        }
+        #stationary{
+            /* clear: left;
+            clear: right; */
+            
+            clear: both;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            /* text-align: center;
+            text-align: left;
+            text-align: right; */
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque dolorum libero magnam eligendi, recusandae maiores ratione? Sed adipisci natus hic mollitia molestias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima accusantium ipsum ducimus, dolores sed impedit voluptates illo mollitia et omnis dicta nam exercitationem.</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>Computer</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque dolorum libero magnam eligendi, recusandae maiores ratione? Sed adipisci natus hic mollitia molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cupiditate natus provident qui est voluptates pariatur error amet quod ea commodi ducimus asperiores illo dolor? Quae molestiae, consequatur repellendus quaerat ea veritatis deserunt accusamus.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2>stationary</h2>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque dolorum libero magnam eligendi, recusandae maiores ratione? Sed adipisci natus hic mollitia molestias?</p>
+        </div>
+    </div>
+</body>
+</html>
