@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid peru;
+            background-color: rgb(175, 255, 228);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(77, 16, 16);
+            background-color: rgb(231, 119, 119);
+        }
+        a:visited{
+            color: rgb(137, 228, 246);
+        }
+        a:active{
+            background-color: rgb(90, 209, 90);
+        }
+        .btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(49, 118, 238);
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+        button:hover{
+            background-color:rgb(46, 106, 208);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is a heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus numquam temporibus pariatur dolore ipsa consequatur iusto? Vero enim facere odio distinctio explicabo.</p>
+        <a href="https://en.wikipedia.org/wiki/Cannabis_(drug)" class="btn" target="_blank">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

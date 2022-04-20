@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* When you want to target p which is anywhere inside div */
+        div p{
+            background-color: green;
+            color: white;
+        }
+
+        /* When you want to target only those p which are direct child of div */
+        /* div > p{
+            background-color: blue;
+            color: white;
+        } */
+
+        /* When you want to target those p whose previous sibling is div */
+        /* div + p{
+            background-color: violet;
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph</p>
+            <ul>
+                <li><p>This is also a paragraph</p></li>
+            </ul>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is yet another paragraph</p>
+</body>
+</html>

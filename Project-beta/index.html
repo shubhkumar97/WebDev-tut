@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <title>Shubham Fitness</title>
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* background: url('img/bg.jpg'); */
+            background-image: url('img/bg.jpg');
+            color: white;
+            font-family: 'Baloo Da 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 6px;
+            left: 10px;
+        }
+
+        .left img {
+            width: 69px;
+            filter: invert(100%);
+            margin: 0px 27px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            bottom: 15px;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            width: 40%;
+            margin: 22px auto;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            right: 10px;
+        }
+
+        .navbar {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: #121315;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 3px 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Baloo Da 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(44, 42, 42);
+        }
+
+        .btn:active{
+            background-color: white;
+            color: black;
+        }
+        .container {
+            box-sizing: border-box;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 15px;
+            margin: 95px 21px;
+            padding: 26px 26px;
+            width: 42%;
+            height: 348px;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form-group input {
+            display: block;
+            width: 300px;
+            margin: 5px auto;
+            padding: 0px 10px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bolder;
+            font-family: 'Baloo Da 2', cursive;
+            border-radius: 6px;
+        }
+
+        .container button {
+            display: block;
+            margin: 20px auto;
+            width: 323px;
+            font-weight: bolder;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- Left box for logo -->
+            <img src="img/logo.png" alt="">
+            <div>Shubham Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- Mid box for logo -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for buttons -->
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi Now !</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter yor name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter yor age">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter yor phone number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter yor email address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
